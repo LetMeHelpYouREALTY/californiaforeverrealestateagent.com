@@ -6,7 +6,7 @@
  * @see https://developers.google.com/search/docs/appearance/structured-data
  */
 
-import { siteConfig, agentInfo, officeInfo, agentStats } from "./site-config";
+import { siteConfig, agentInfo, officeInfo } from "./site-config";
 
 // ============================================================================
 // Types
