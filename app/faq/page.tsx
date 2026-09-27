@@ -3,7 +3,6 @@ import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone } from "lucide-react";
-import type { Metadata } from "next";
 import SchemaScript from "@/components/SchemaScript";
 import {
   generateBreadcrumbSchema,
@@ -12,18 +11,14 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "FAQ | Berkshire Hathaway HomeServices Las Vegas Real Estate",
-  description:
-    "Frequently asked questions about Las Vegas real estate, Berkshire Hathaway HomeServices, buying, selling, and working with Dr. Jan Duffy at BHHS Nevada Properties.",
-  keywords: [
-    "Berkshire Hathaway HomeServices FAQ",
-    "Las Vegas real estate questions",
-    "buying a home Las Vegas",
-    "selling a home Henderson",
-    "BHHS agent questions",
-  ],
-};
+  description: "Frequently asked questions about Las Vegas real estate, Berkshire Hathaway HomeServices, buying, selling, and working with Dr. Jan Duffy at BHHS Nevada Properties.",
+  path: "/faq",
+  keywords: ["Berkshire Hathaway HomeServices FAQ", "Las Vegas real estate questions", "buying a home Las Vegas", "selling a home Henderson", "BHHS agent questions"],
+});
 
 // Breadcrumb items
 const breadcrumbs = [

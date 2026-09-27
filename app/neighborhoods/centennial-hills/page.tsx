@@ -3,20 +3,15 @@ import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone, Mountain, Users, ShoppingBag, Home as HomeIcon } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Berkshire Hathaway HomeServices Centennial Hills | Las Vegas Homes",
-  description:
-    "Find Centennial Hills homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this established northwest community. Median price $495K. Call (702) 222-1964.",
-  keywords: [
-    "Berkshire Hathaway HomeServices Centennial Hills",
-    "Centennial Hills homes for sale",
-    "Centennial Hills Las Vegas",
-    "northwest Las Vegas real estate",
-    "family homes Las Vegas",
-  ],
-};
+  description: "Find Centennial Hills homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this established northwest community. Median price $495K. Call (702) 222-1964.",
+  path: "/neighborhoods/centennial-hills",
+  keywords: ["Berkshire Hathaway HomeServices Centennial Hills", "Centennial Hills homes for sale", "Centennial Hills Las Vegas", "northwest Las Vegas real estate", "family homes Las Vegas"],
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

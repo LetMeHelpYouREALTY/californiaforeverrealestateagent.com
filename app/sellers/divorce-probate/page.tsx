@@ -13,20 +13,15 @@ import {
   Lock,
   Users,
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Divorce & Probate Home Sales Las Vegas | Berkshire Hathaway HomeServices",
-  description:
-    "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 222-1964.",
-  keywords: [
-    "divorce home sale Las Vegas",
-    "probate real estate Las Vegas",
-    "estate sale Las Vegas",
-    "court ordered sale Nevada",
-    "Berkshire Hathaway HomeServices divorce",
-  ],
-};
+  description: "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 222-1964.",
+  path: "/sellers/divorce-probate",
+  keywords: ["divorce home sale Las Vegas", "probate real estate Las Vegas", "estate sale Las Vegas", "court ordered sale Nevada", "Berkshire Hathaway HomeServices divorce"],
+});
 
 export default function DivorceProbatePage() {
   return (

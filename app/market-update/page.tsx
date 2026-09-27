@@ -13,20 +13,15 @@ import {
   BarChart3,
   ArrowRight,
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Berkshire Hathaway HomeServices Las Vegas Market Update | January 2026",
-  description:
-    "Weekly Las Vegas real estate market update from Berkshire Hathaway HomeServices Nevada Properties. Get the latest stats, notable sales, and expert analysis from Dr. Jan Duffy. Call (702) 222-1964.",
-  keywords: [
-    "Berkshire Hathaway HomeServices Las Vegas market update",
-    "Las Vegas real estate market",
-    "Las Vegas housing market 2026",
-    "Henderson real estate market",
-    "Las Vegas home prices",
-  ],
-};
+  description: "Weekly Las Vegas real estate market update from Berkshire Hathaway HomeServices Nevada Properties. Get the latest stats, notable sales, and expert analysis from Dr. Jan Duffy. Call (702) 222-1964.",
+  path: "/market-update",
+  keywords: ["Berkshire Hathaway HomeServices Las Vegas market update", "Las Vegas real estate market", "Las Vegas housing market 2026", "Henderson real estate market", "Las Vegas home prices"],
+});
 
 const articleSchema = {
   "@context": "https://schema.org",

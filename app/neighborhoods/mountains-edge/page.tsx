@@ -3,20 +3,15 @@ import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone, Mountain, TreePine, DollarSign, Home as HomeIcon } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Berkshire Hathaway HomeServices Mountains Edge | Southwest Las Vegas",
-  description:
-    "Find Mountains Edge homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this southwest Las Vegas community. Median price $475K. Call (702) 222-1964.",
-  keywords: [
-    "Berkshire Hathaway HomeServices Mountains Edge",
-    "Mountains Edge homes for sale",
-    "Mountains Edge Las Vegas",
-    "southwest Las Vegas homes",
-    "affordable Las Vegas",
-  ],
-};
+  description: "Find Mountains Edge homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this southwest Las Vegas community. Median price $475K. Call (702) 222-1964.",
+  path: "/neighborhoods/mountains-edge",
+  keywords: ["Berkshire Hathaway HomeServices Mountains Edge", "Mountains Edge homes for sale", "Mountains Edge Las Vegas", "southwest Las Vegas homes", "affordable Las Vegas"],
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

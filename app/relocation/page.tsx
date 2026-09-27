@@ -18,23 +18,15 @@ import {
   Shield,
   Globe,
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Relocating to Las Vegas | Berkshire Hathaway HomeServices",
-  description:
-    "Moving to Las Vegas? Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties provides comprehensive relocation services. Schools, neighborhoods, cost of living. Call (702) 222-1964.",
-  keywords: [
-    "relocating to Las Vegas",
-    "moving to Las Vegas",
-    "Las Vegas relocation services",
-    "moving to Henderson Nevada",
-    "California to Las Vegas",
-    "Las Vegas relocation agent",
-    "moving from California to Nevada",
-    "Las Vegas real estate relocation",
-  ],
-};
+  description: "Moving to Las Vegas? Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties provides comprehensive relocation services. Schools, neighborhoods, cost of living. Call (702) 222-1964.",
+  path: "/relocation",
+  keywords: ["relocating to Las Vegas", "moving to Las Vegas", "Las Vegas relocation services", "moving to Henderson Nevada", "California to Las Vegas", "Las Vegas relocation agent", "moving from California to Nevada", "Las Vegas real estate relocation"],
+});
 
 const relocationSchema = {
   "@context": "https://schema.org",

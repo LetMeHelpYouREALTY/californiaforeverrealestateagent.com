@@ -13,20 +13,15 @@ import {
   Shield,
   Sun,
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Downsizing in Las Vegas | Berkshire Hathaway HomeServices",
-  description:
-    "Ready to simplify? Dr. Jan Duffy helps Las Vegas homeowners extract equity and transition to low-maintenance living. 55+ communities, condos, and more. Call (702) 222-1964.",
-  keywords: [
-    "downsizing Las Vegas",
-    "sell large home Las Vegas",
-    "55 plus communities Las Vegas",
-    "empty nester Las Vegas",
-    "Berkshire Hathaway HomeServices downsizing",
-  ],
-};
+  description: "Ready to simplify? Dr. Jan Duffy helps Las Vegas homeowners extract equity and transition to low-maintenance living. 55+ communities, condos, and more. Call (702) 222-1964.",
+  path: "/sellers/downsizing",
+  keywords: ["downsizing Las Vegas", "sell large home Las Vegas", "55 plus communities Las Vegas", "empty nester Las Vegas", "Berkshire Hathaway HomeServices downsizing"],
+});
 
 export default function DownsizingPage() {
   return (

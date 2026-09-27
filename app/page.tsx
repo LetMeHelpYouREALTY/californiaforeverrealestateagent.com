@@ -9,6 +9,16 @@ import { Phone, Home as HomeIcon, TrendingUp, Shield, Users } from "lucide-react
 import { getPageDomainConfig } from "@/lib/get-domain-config";
 import { getFaqsForDomain } from "@/lib/faq-config";
 import { getSiteUrl } from "@/lib/site-url";
+import { buildPageMetadata } from "@/lib/seo/metadata";
+import { DOMAIN_CONFIG, SITE_TITLE } from "@/lib/domain-config";
+
+export const metadata = buildPageMetadata({
+  title: SITE_TITLE,
+  exactTitle: true,
+  description: DOMAIN_CONFIG.description,
+  path: "/",
+  keywords: DOMAIN_CONFIG.keywords,
+});
 
 // Maps pageType → human-readable FAQ section title/subtitle
 const FAQ_SECTION_COPY: Record<

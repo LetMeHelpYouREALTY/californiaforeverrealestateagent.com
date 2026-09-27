@@ -14,27 +14,15 @@ import {
   Mountain,
   DollarSign,
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Solera at Anthem Homes for Sale | Intimate Guard-Gated 55+ Henderson | Dr. Jan Duffy",
-  description:
-    "Solera at Anthem - intimate guard-gated 55+ community in Henderson. Homes from $380K-$650K. Lower HOA fees, close-knit atmosphere. Dr. Jan Duffy, BHHS. Call (702) 222-1964.",
-  keywords: [
-    "Solera at Anthem homes for sale",
-    "Solera Anthem Henderson",
-    "guard-gated 55+ community Henderson",
-    "Henderson 55+ communities",
-    "intimate 55+ community Las Vegas",
-    "Berkshire Hathaway Solera Anthem",
-  ],
-  openGraph: {
-    title: "Solera at Anthem - Intimate Guard-Gated 55+ in Henderson",
-    description:
-      "Close-knit community with guard-gated security. Lower HOA fees, Henderson safety. From $380K. Dr. Jan Duffy, BHHS.",
-    type: "website",
-  },
-};
+  description: "Solera at Anthem - intimate guard-gated 55+ community in Henderson. Homes from $380K-$650K. Lower HOA fees, close-knit atmosphere. Dr. Jan Duffy, BHHS. Call (702) 222-1964.",
+  path: "/55-plus-communities/solera-anthem",
+  keywords: ["Solera at Anthem homes for sale", "Solera Anthem Henderson", "guard-gated 55+ community Henderson", "Henderson 55+ communities", "intimate 55+ community Las Vegas", "Berkshire Hathaway Solera Anthem"],
+});
 
 const communitySchema = {
   "@context": "https://schema.org",

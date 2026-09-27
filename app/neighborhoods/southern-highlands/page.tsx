@@ -3,20 +3,15 @@ import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone, Shield, Mountain, Star, MapPin } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Berkshire Hathaway HomeServices Southern Highlands | Las Vegas Golf Community",
-  description:
-    "Find Southern Highlands homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier golf community. Median price $750K. Call (702) 222-1964.",
-  keywords: [
-    "Berkshire Hathaway HomeServices Southern Highlands",
-    "Southern Highlands homes for sale",
-    "Southern Highlands golf",
-    "Las Vegas golf community",
-    "guard gated Las Vegas",
-  ],
-};
+  description: "Find Southern Highlands homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier golf community. Median price $750K. Call (702) 222-1964.",
+  path: "/neighborhoods/southern-highlands",
+  keywords: ["Berkshire Hathaway HomeServices Southern Highlands", "Southern Highlands homes for sale", "Southern Highlands golf", "Las Vegas golf community", "guard gated Las Vegas"],
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

@@ -3,20 +3,15 @@ import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone, Mountain, Users, Home as HomeIcon, GraduationCap } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Berkshire Hathaway HomeServices Skye Canyon | Northwest Las Vegas",
-  description:
-    "Find Skye Canyon homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier northwest community. Median price $550K. Call (702) 222-1964.",
-  keywords: [
-    "Berkshire Hathaway HomeServices Skye Canyon",
-    "Skye Canyon homes for sale",
-    "Skye Canyon Las Vegas",
-    "northwest Las Vegas homes",
-    "new construction Skye Canyon",
-  ],
-};
+  description: "Find Skye Canyon homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier northwest community. Median price $550K. Call (702) 222-1964.",
+  path: "/neighborhoods/skye-canyon",
+  keywords: ["Berkshire Hathaway HomeServices Skye Canyon", "Skye Canyon homes for sale", "Skye Canyon Las Vegas", "northwest Las Vegas homes", "new construction Skye Canyon"],
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

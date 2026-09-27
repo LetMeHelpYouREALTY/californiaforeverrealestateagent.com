@@ -17,22 +17,15 @@ import {
   ArrowRight,
   Award,
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Sell Your Las Vegas Home | Berkshire Hathaway HomeServices",
-  description:
-    "Sell your Las Vegas or Henderson home for top dollar with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Free home valuation. World-class marketing. Call (702) 222-1964.",
-  keywords: [
-    "sell home Las Vegas",
-    "Las Vegas listing agent",
-    "Berkshire Hathaway sell house",
-    "Henderson home selling",
-    "what is my home worth Las Vegas",
-    "Las Vegas real estate agent",
-    "Summerlin home selling",
-  ],
-};
+  description: "Sell your Las Vegas or Henderson home for top dollar with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Free home valuation. World-class marketing. Call (702) 222-1964.",
+  path: "/sellers",
+  keywords: ["sell home Las Vegas", "Las Vegas listing agent", "Berkshire Hathaway sell house", "Henderson home selling", "what is my home worth Las Vegas", "Las Vegas real estate agent", "Summerlin home selling"],
+});
 
 const sellerSchema = {
   "@context": "https://schema.org",

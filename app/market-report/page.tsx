@@ -3,20 +3,15 @@ import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { TrendingUp, TrendingDown, Home, Calendar, DollarSign, BarChart, Phone } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Las Vegas Real Estate Market Report January 2026 | Berkshire Hathaway HomeServices",
-  description:
-    "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Berkshire Hathaway HomeServices Nevada Properties.",
-  keywords: [
-    "Las Vegas real estate market",
-    "Las Vegas home prices 2026",
-    "Henderson real estate market",
-    "Nevada housing market",
-    "Berkshire Hathaway market report",
-  ],
-};
+  description: "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Berkshire Hathaway HomeServices Nevada Properties.",
+  path: "/market-report",
+  keywords: ["Las Vegas real estate market", "Las Vegas home prices 2026", "Henderson real estate market", "Nevada housing market", "Berkshire Hathaway market report"],
+});
 
 // Report Schema
 const reportSchema = {

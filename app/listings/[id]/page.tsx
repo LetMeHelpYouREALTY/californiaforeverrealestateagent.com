@@ -3,12 +3,14 @@ import Footer from "@/components/layouts/Footer";
 import Image from "next/image";
 import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Property Details | Las Vegas & Henderson Real Estate",
   description: "View detailed information about this property listing in Las Vegas or Henderson, NV.",
-};
+  path: "/listings/[id]",
+});
 
 // This would typically fetch from RealScout API
 async function getProperty(id: string) {

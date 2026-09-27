@@ -11,7 +11,9 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { FollowUpBossClient } from '@/lib/fub/client';
+import { getFubApiKey, getFubSystemKey } from '@/lib/fub/env';
 import { leadFormLimiter, getClientId, checkRateLimit, getRateLimitHeaders } from '@/lib/rate-limit';
+import { SITE_DOMAIN } from '@/lib/site-url';
 
 export interface LeadCaptureRequest {
   // Required
@@ -42,6 +44,8 @@ export interface LeadCaptureRequest {
   
   // Security
   turnstileToken?: string;
+  /** Honeypot — bots fill this; humans leave empty */
+  website?: string;
   
   // Custom fields
   customFields?: Record<string, any>;
@@ -77,7 +81,21 @@ async function verifyTurnstileToken(token: string): Promise<boolean> {
 
 export async function POST(request: NextRequest) {
   try {
-    const data: LeadCaptureRequest = await request.json();
+    let data: LeadCaptureRequest;
+    try {
+      data = await request.json();
+    } catch {
+      return NextResponse.json({ error: 'Invalid request body' }, { status: 400 });
+    }
+
+    if (typeof data !== 'object' || data === null) {
+      return NextResponse.json({ error: 'Invalid request body' }, { status: 400 });
+    }
+
+    // Honeypot: pretend success without calling FUB
+    if (typeof data.website === 'string' && data.website.trim().length > 0) {
+      return NextResponse.json({ success: true, message: 'Lead created successfully' });
+    }
 
     // Check rate limit (5 submissions per hour per IP)
     const clientId = getClientId(request);
@@ -132,10 +150,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Initialize FUB client
+    const apiKey = getFubApiKey();
+    if (!apiKey) {
+      console.error('[Lead Capture] FOLLOW_UP_BOSS_API_KEY (or FUB_API_KEY) is not configured');
+      return NextResponse.json(
+        { error: 'Lead capture is temporarily unavailable' },
+        { status: 500 }
+      );
+    }
+
     const fub = new FollowUpBossClient({
-      apiKey: process.env.FUB_API_KEY || '',
-      systemKey: process.env.FUB_SYSTEM_KEY,
+      apiKey,
+      systemKey: getFubSystemKey(),
     });
 
     // Check for existing lead (deduplication)
@@ -236,12 +262,9 @@ export async function POST(request: NextRequest) {
 
   } catch (error) {
     console.error('[Lead Capture] Error:', error);
-    
+
     return NextResponse.json(
-      { 
-        error: 'Failed to capture lead',
-        details: error instanceof Error ? error.message : 'Unknown error',
-      },
+      { error: 'Failed to capture lead' },
       { status: 500 }
     );
   }
@@ -251,15 +274,16 @@ export async function POST(request: NextRequest) {
  * Enrich source with UTM parameters and referrer
  */
 function enrichSource(source: string | undefined, request: NextRequest): string {
+  const defaultSource = SITE_DOMAIN;
   const url = new URL(request.url);
-  
+
   // Check UTM parameters
   const utmSource = url.searchParams.get('utm_source');
   const utmMedium = url.searchParams.get('utm_medium');
   const utmCampaign = url.searchParams.get('utm_campaign');
 
   if (utmSource) {
-    return `${utmSource}${utmMedium ? `/${utmMedium}` : ''}${utmCampaign ? `/${utmCampaign}` : ''}`;
+    return `${defaultSource}|${utmSource}${utmMedium ? `/${utmMedium}` : ''}${utmCampaign ? `/${utmCampaign}` : ''}`;
   }
 
   // Check referrer
@@ -267,15 +291,16 @@ function enrichSource(source: string | undefined, request: NextRequest): string 
   if (referrer) {
     try {
       const refUrl = new URL(referrer);
-      if (!refUrl.hostname.includes('heyberkshire.com')) {
-        return `referral/${refUrl.hostname}`;
+      if (refUrl.hostname.includes(SITE_DOMAIN)) {
+        return source?.trim() ? `${defaultSource}|${source.trim()}` : defaultSource;
       }
-    } catch (e) {
+      return `${defaultSource}|referral/${refUrl.hostname}`;
+    } catch {
       // Invalid URL
     }
   }
 
-  return source || 'website/direct';
+  return source?.trim() ? `${defaultSource}|${source.trim()}` : defaultSource;
 }
 
 /**

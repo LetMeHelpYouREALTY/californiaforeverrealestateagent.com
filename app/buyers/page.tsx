@@ -18,22 +18,15 @@ import {
   Clock,
   ArrowRight,
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Home Buying Guide Las Vegas | Berkshire Hathaway HomeServices",
-  description:
-    "Looking to buy a home in Las Vegas? Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties guides you through every step. Free buyer consultation. Call (702) 222-1964.",
-  keywords: [
-    "buy home Las Vegas",
-    "Las Vegas home buyer",
-    "Berkshire Hathaway buyer agent",
-    "Henderson homes for sale",
-    "first time home buyer Las Vegas",
-    "California relocation Las Vegas",
-    "55+ communities Las Vegas",
-  ],
-};
+  description: "Looking to buy a home in Las Vegas? Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties guides you through every step. Free buyer consultation. Call (702) 222-1964.",
+  path: "/buyers",
+  keywords: ["buy home Las Vegas", "Las Vegas home buyer", "Berkshire Hathaway buyer agent", "Henderson homes for sale", "first time home buyer Las Vegas", "California relocation Las Vegas", "55+ communities Las Vegas"],
+});
 
 const buyerSchema = {
   "@context": "https://schema.org",

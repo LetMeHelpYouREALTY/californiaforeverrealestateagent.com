@@ -16,21 +16,16 @@ import {
   Clock,
   ArrowRight,
 } from "lucide-react";
-import type { Metadata } from "next";
+import { getSiteUrl } from "@/lib/site-url";
 
-export const metadata: Metadata = {
-  title: "About Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
-  description:
-    "Meet Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent. Serving Las Vegas since 2008, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 222-1964.",
-  keywords: [
-    "Dr. Jan Duffy",
-    "Berkshire Hathaway HomeServices agent",
-    "Las Vegas realtor",
-    "BHHS Nevada Properties",
-    "Henderson real estate agent",
-    "Summerlin realtor",
-  ],
-};
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
+  title: "About Dr. Jan Duffy | Las Vegas REALTOR®",
+  description: "Meet Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent. Serving Las Vegas since 2008, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 222-1964.",
+  path: "/about",
+  keywords: ["Dr. Jan Duffy", "Berkshire Hathaway HomeServices agent", "Las Vegas realtor", "BHHS Nevada Properties", "Henderson real estate agent", "Summerlin realtor"],
+});
 
 // Person Schema for Dr. Jan Duffy
 const personSchema = {
@@ -40,9 +35,9 @@ const personSchema = {
   jobTitle: "REALTOR®",
   description:
     "Licensed real estate agent with Berkshire Hathaway HomeServices Nevada Properties, serving Las Vegas, Henderson, and Summerlin since 2008.",
-  telephone: "+17022221964",
+  telephone: "+1-702-222-1964",
   email: "homes@heyberkshire.com",
-  url: "https://heyberkshire.com/about",
+  url: `${getSiteUrl()}/about`,
   worksFor: {
     "@type": "RealEstateAgent",
     name: "Berkshire Hathaway HomeServices Nevada Properties",
@@ -128,7 +123,7 @@ export default function AboutPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Meet Your Berkshire Hathaway HomeServices Agent
+              About Dr. Jan Duffy
             </h1>
             <p className="text-xl text-slate-600">
               Dr. Jan Duffy has been serving Las Vegas since 2008—backed by the most

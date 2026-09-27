@@ -4,28 +4,24 @@ import RealScoutListings from "@/components/realscout/RealScoutListings";
 import { Phone, Mail, MapPin, Clock, Calendar, CheckCircle, Star, Users, Shield } from "lucide-react";
 import CalendlyWidget from "@/components/calendly/CalendlyWidget";
 import Link from "next/link";
-import type { Metadata } from "next";
+import { getSiteUrl } from "@/lib/site-url";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Contact Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
-  description:
-    "Contact Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment, get directions, or call (702) 222-1964. Las Vegas, Henderson, Summerlin real estate expert.",
-  keywords: [
-    "contact real estate agent Las Vegas",
-    "Berkshire Hathaway contact",
-    "Dr. Jan Duffy phone",
-    "Las Vegas realtor contact",
-    "schedule real estate appointment",
-  ],
-};
+  description: "Contact Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment, get directions, or call (702) 222-1964. Las Vegas, Henderson, Summerlin real estate expert.",
+  path: "/contact",
+  keywords: ["contact real estate agent Las Vegas", "Berkshire Hathaway contact", "Dr. Jan Duffy phone", "Las Vegas realtor contact", "schedule real estate appointment"],
+});
 
 const contactSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
   mainEntity: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-    telephone: "+17022221964",
+    name: "Dr. Jan Duffy",
+    telephone: "+1-702-222-1964",
     email: "homes@heyberkshire.com",
     address: {
       "@type": "PostalAddress",

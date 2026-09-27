@@ -12,20 +12,15 @@ import {
   Calendar,
   Shield,
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Move-Up Sellers Las Vegas | Berkshire Hathaway HomeServices",
-  description:
-    "Ready for your next chapter? Dr. Jan Duffy helps Las Vegas homeowners leverage equity into their dream home. Sell and buy seamlessly. Call (702) 222-1964.",
-  keywords: [
-    "move up buyer Las Vegas",
-    "sell and buy Las Vegas",
-    "home equity Las Vegas",
-    "upgrade home Las Vegas",
-    "Berkshire Hathaway HomeServices seller",
-  ],
-};
+  description: "Ready for your next chapter? Dr. Jan Duffy helps Las Vegas homeowners leverage equity into their dream home. Sell and buy seamlessly. Call (702) 222-1964.",
+  path: "/sellers/move-up",
+  keywords: ["move up buyer Las Vegas", "sell and buy Las Vegas", "home equity Las Vegas", "upgrade home Las Vegas", "Berkshire Hathaway HomeServices seller"],
+});
 
 export default function MoveUpSellerPage() {
   return (

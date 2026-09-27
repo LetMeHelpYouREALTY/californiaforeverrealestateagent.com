@@ -1,13 +1,12 @@
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Security Policy',
-  description: 'Security policy and responsible disclosure information for heyberkshire.com',
-  robots: {
-    index: true,
-    follow: true,
-  },
-}
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
+  title: "Las Vegas Real Estate",
+  description: "",
+  path: "/security-policy",
+});
 
 export default function SecurityPolicyPage() {
   return (

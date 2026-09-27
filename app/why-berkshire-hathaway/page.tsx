@@ -3,20 +3,15 @@ import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Shield, Users, Globe, Award, TrendingUp, CheckCircle, Phone } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Why Choose Berkshire Hathaway HomeServices | Las Vegas Real Estate",
-  description:
-    "Discover why Berkshire Hathaway HomeServices is the most trusted name in real estate. Backed by Warren Buffett, with 50,000+ agents worldwide. Work with BHHS Nevada Properties today.",
-  keywords: [
-    "Berkshire Hathaway HomeServices",
-    "why choose BHHS",
-    "Warren Buffett real estate",
-    "trusted real estate brand",
-    "BHHS Nevada Properties",
-  ],
-};
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
+  title: "Why a National-Brand Brokerage | Las Vegas Real Estate",
+  description: "Discover why Berkshire Hathaway HomeServices is the most trusted name in real estate. Backed by Warren Buffett, with 50,000+ agents worldwide. Work with BHHS Nevada Properties today.",
+  path: "/why-berkshire-hathaway",
+  keywords: ["Berkshire Hathaway HomeServices", "why choose BHHS", "Warren Buffett real estate", "trusted real estate brand", "BHHS Nevada Properties"],
+});
 
 // Organization Schema
 const organizationSchema = {
@@ -50,7 +45,7 @@ export default function WhyBerkshireHathawayPage() {
               The Most Trusted Name in Real Estate
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Why Choose Berkshire Hathaway HomeServices?
+              Why National-Brand Brokerage Support Matters
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
               When you work with a <strong>Berkshire Hathaway HomeServices</strong> agent, you're

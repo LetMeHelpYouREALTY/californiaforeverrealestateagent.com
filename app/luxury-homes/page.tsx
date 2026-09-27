@@ -17,23 +17,15 @@ import {
   Camera,
   Users,
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Las Vegas Luxury Homes for Sale | Berkshire Hathaway HomeServices",
-  description:
-    "Discover Las Vegas luxury real estate with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 222-1964.",
-  keywords: [
-    "Las Vegas luxury homes",
-    "The Ridges Las Vegas",
-    "Summerlin luxury real estate",
-    "Southern Highlands homes",
-    "Berkshire Hathaway luxury",
-    "million dollar homes Las Vegas",
-    "MacDonald Highlands Henderson",
-    "luxury real estate agent Las Vegas",
-  ],
-};
+  description: "Discover Las Vegas luxury real estate with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 222-1964.",
+  path: "/luxury-homes",
+  keywords: ["Las Vegas luxury homes", "The Ridges Las Vegas", "Summerlin luxury real estate", "Southern Highlands homes", "Berkshire Hathaway luxury", "million dollar homes Las Vegas", "MacDonald Highlands Henderson", "luxury real estate agent Las Vegas"],
+});
 
 const luxurySchema = {
   "@context": "https://schema.org",

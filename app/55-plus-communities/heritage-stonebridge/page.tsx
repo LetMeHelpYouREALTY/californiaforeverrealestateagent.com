@@ -14,27 +14,15 @@ import {
   Mountain,
   Star,
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Heritage at Stonebridge Homes for Sale | Guard-Gated 55+ Summerlin | Dr. Jan Duffy",
-  description:
-    "Heritage at Stonebridge - boutique guard-gated 55+ community in Summerlin. Homes from $400K-$750K. Near Downtown Summerlin, Red Rock Canyon. Dr. Jan Duffy, BHHS. Call (702) 222-1964.",
-  keywords: [
-    "Heritage at Stonebridge homes for sale",
-    "Heritage Stonebridge Summerlin",
-    "guard-gated 55+ community Las Vegas",
-    "Summerlin 55+ communities",
-    "boutique 55+ community Las Vegas",
-    "Berkshire Hathaway Heritage Stonebridge",
-  ],
-  openGraph: {
-    title: "Heritage at Stonebridge - Guard-Gated 55+ Living in Summerlin",
-    description:
-      "Boutique community with premium Summerlin location. Guard-gated security, near Downtown Summerlin. From $400K. Dr. Jan Duffy, BHHS.",
-    type: "website",
-  },
-};
+  description: "Heritage at Stonebridge - boutique guard-gated 55+ community in Summerlin. Homes from $400K-$750K. Near Downtown Summerlin, Red Rock Canyon. Dr. Jan Duffy, BHHS. Call (702) 222-1964.",
+  path: "/55-plus-communities/heritage-stonebridge",
+  keywords: ["Heritage at Stonebridge homes for sale", "Heritage Stonebridge Summerlin", "guard-gated 55+ community Las Vegas", "Summerlin 55+ communities", "boutique 55+ community Las Vegas", "Berkshire Hathaway Heritage Stonebridge"],
+});
 
 const communitySchema = {
   "@context": "https://schema.org",

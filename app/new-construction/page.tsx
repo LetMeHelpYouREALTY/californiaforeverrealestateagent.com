@@ -17,22 +17,15 @@ import {
   FileText,
   HelpCircle,
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildPageMetadata({
   title: "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
-  description:
-    "Free buyer representation on new construction homes in Las Vegas. Dr. Jan Duffy helps you navigate builder contracts, negotiate upgrades, and secure incentives. Call (702) 222-1964.",
-  keywords: [
-    "Berkshire Hathaway HomeServices new construction Las Vegas",
-    "new homes Las Vegas",
-    "new construction Henderson",
-    "Las Vegas builders",
-    "Toll Brothers Las Vegas",
-    "Lennar Las Vegas",
-    "KB Home Las Vegas",
-  ],
-};
+  description: "Free buyer representation on new construction homes in Las Vegas. Dr. Jan Duffy helps you navigate builder contracts, negotiate upgrades, and secure incentives. Call (702) 222-1964.",
+  path: "/new-construction",
+  keywords: ["Berkshire Hathaway HomeServices new construction Las Vegas", "new homes Las Vegas", "new construction Henderson", "Las Vegas builders", "Toll Brothers Las Vegas", "Lennar Las Vegas", "KB Home Las Vegas"],
+});
 
 const faqSchema = {
   "@context": "https://schema.org",
