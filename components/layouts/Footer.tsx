@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { agentInfo } from "@/lib/site-config";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -181,10 +182,10 @@ export default function Footer() {
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0" />
                 <Link
-                  href="tel:+17025001942"
+                  href={agentInfo.phoneTel}
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
-                  (702) 500-1942
+                  {agentInfo.phoneFormatted}
                 </Link>
               </li>
               <li className="flex items-center">

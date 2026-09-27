@@ -1,27 +1,26 @@
-// Site Configuration - HeyBerkshire.com
-// Berkshire Hathaway HomeServices Nevada Properties
+// Site Configuration — californiaforeverrealestateagent.com
+
+import { getSiteUrl } from "./site-url";
 
 export const siteConfig = {
-  name: "HeyBerkshire",
-  fullName: "Berkshire Hathaway HomeServices Nevada Properties",
-  tagline: "Private Client Real Estate Advisory",
-  /** Full brand line for titles and OG: Berkshire Hathaway HomeServices Nevada Properties | Private Client Real Estate Advisory */
-  brandLine:
-    "Berkshire Hathaway HomeServices Nevada Properties | Private Client Real Estate Advisory",
-  brandName: "Berkshire Hathaway HomeServices",
-  shortName: "BHHS",
-  url: "https://heyberkshire.com",
+  name: "California Forever Real Estate Agent",
+  fullName: "Bay Area to Las Vegas Relocation | Dr. Jan Duffy",
+  tagline: "Bay Area to Las Vegas relocation",
+  brandLine: "Bay Area to Las Vegas Relocation | Dr. Jan Duffy",
+  brandName: "Dr. Jan Duffy",
+  shortName: "Dr. Jan Duffy",
+  url: getSiteUrl(),
   description:
-    "Expert real estate services in Las Vegas and Henderson, NV. Buy, sell, or invest with Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent.",
+    "Bay Area to Las Vegas relocation for households leaving the San Francisco Bay Area for Las Vegas or Henderson. Dr. Jan Duffy, REALTOR®. Call (702) 222-1964.",
 };
 
 export const agentInfo = {
   name: "Dr. Jan Duffy",
   title: "REALTOR®",
   license: "S.0197614.LLC",
-  phone: "(702) 500-1942",
-  phoneFormatted: "(702) 500-1942",
-  phoneTel: "tel:+17025001942",
+  phone: "(702) 222-1964",
+  phoneFormatted: "(702) 222-1964",
+  phoneTel: "tel:+17022221964",
   email: "homes@heyberkshire.com",
   brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
 };
@@ -39,8 +38,8 @@ export const officeInfo = {
     lat: 36.1893,
     lng: -115.2821,
   },
-  phone: "(702) 500-1942",
-  phoneTel: "tel:+17025001942",
+  phone: "(702) 222-1964",
+  phoneTel: "tel:+17022221964",
 };
 
 // Market Statistics (Updated January 2026)
@@ -79,13 +78,11 @@ export const marketStats = {
   },
 };
 
-// Agent Stats
+// Agent Stats (no review counts in schema — GSC policy)
 export const agentStats = {
   servingSince: 2008,
   transactionsClosed: 500,
   volumeClosed: "$127M+",
-  averageRating: 4.9,
-  reviewCount: 200,
 };
 
 // Value Propositions

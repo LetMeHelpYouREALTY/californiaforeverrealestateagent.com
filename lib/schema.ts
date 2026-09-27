@@ -6,7 +6,7 @@
  * @see https://developers.google.com/search/docs/appearance/structured-data
  */
 
-import { siteConfig, agentInfo, officeInfo, agentStats } from "./site-config";
+import { siteConfig, agentInfo, officeInfo } from "./site-config";
 
 // ============================================================================
 // Types
@@ -95,7 +95,7 @@ export function generateRealEstateAgentSchema() {
     logo: `${BASE_URL}/images/dr-jan-duffy.jpg`,
     image: `${BASE_URL}/images/dr-jan-duffy.jpg`,
     description: siteConfig.description,
-    telephone: "+1-702-500-1942",
+    telephone: "+1-702-222-1964",
     email: agentInfo.email,
     priceRange: "$385K - $10M+",
     address: {
@@ -169,13 +169,6 @@ export function generateRealEstateAgentSchema() {
         sameAs: "https://en.wikipedia.org/wiki/Berkshire_Hathaway_HomeServices",
       },
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: agentStats.averageRating.toString(),
-      reviewCount: agentStats.reviewCount.toString(),
-      bestRating: "5",
-      worstRating: "1",
-    },
     knowsAbout: [
       "Las Vegas real estate",
       "Henderson homes",
@@ -187,7 +180,7 @@ export function generateRealEstateAgentSchema() {
       "55+ communities",
       "First-time homebuyers",
     ],
-    slogan: "Your Berkshire Hathaway HomeServices expert in Las Vegas",
+    slogan: "Bay Area to Las Vegas relocation — Dr. Jan Duffy",
   };
 }
 
@@ -308,10 +301,6 @@ export function generateReviewSchema(reviews: ReviewItem[]) {
     "@type": "RealEstateAgent",
     "@id": `${BASE_URL}#organization`,
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-    aggregateRating: generateAggregateRatingSchema(
-      agentStats.averageRating,
-      agentStats.reviewCount
-    ),
     review: reviews.map((review) => ({
       "@type": "Review",
       author: {
