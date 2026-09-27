@@ -14,7 +14,7 @@ import {
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "FAQ | Berkshire Hathaway HomeServices Las Vegas Real Estate",
+  title: "FAQ | Bay Area to Las Vegas Real Estate",
   description: "Frequently asked questions about Las Vegas real estate, Berkshire Hathaway HomeServices, buying, selling, and working with Dr. Jan Duffy at BHHS Nevada Properties.",
   path: "/faq",
   keywords: ["Berkshire Hathaway HomeServices FAQ", "Las Vegas real estate questions", "buying a home Las Vegas", "selling a home Henderson", "BHHS agent questions"],
@@ -28,7 +28,7 @@ const breadcrumbs = [
 
 const faqCategories = [
   {
-    title: "About Berkshire Hathaway HomeServices",
+    title: "About Dr. Jan Duffy & Her Brokerage",
     faqs: [
       {
         q: "Why should I choose a Berkshire Hathaway HomeServices agent?",

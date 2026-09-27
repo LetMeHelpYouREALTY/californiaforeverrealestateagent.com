@@ -7,7 +7,7 @@ import { MapPin, Phone, Home, Users, GraduationCap } from "lucide-react";
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Las Vegas Neighborhoods | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Neighborhoods for Bay Area Relocators",
   description: "Explore Las Vegas and Henderson neighborhoods with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Summerlin, Henderson, The Ridges, Southern Highlands & more.",
   path: "/neighborhoods",
   keywords: ["Las Vegas neighborhoods", "Henderson communities", "Summerlin real estate", "best neighborhoods Las Vegas", "where to live Las Vegas"],

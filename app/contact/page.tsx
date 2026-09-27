@@ -9,7 +9,7 @@ import { getSiteUrl } from "@/lib/site-url";
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Contact Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
+  title: "Contact Dr. Jan Duffy | Bay Area to Las Vegas",
   description: "Contact Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment, get directions, or call (702) 222-1964. Las Vegas, Henderson, Summerlin real estate expert.",
   path: "/contact",
   keywords: ["contact real estate agent Las Vegas", "Berkshire Hathaway contact", "Dr. Jan Duffy phone", "Las Vegas realtor contact", "schedule real estate appointment"],

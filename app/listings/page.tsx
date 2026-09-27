@@ -21,7 +21,7 @@ import {
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Las Vegas Homes for Sale | MLS Property Search | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Homes for Sale | Bay Area Relocators",
   description: "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features. Dr. Jan Duffy, Berkshire Hathaway HomeServices. Call (702) 222-1964.",
   path: "/listings",
   keywords: ["Las Vegas homes for sale", "Henderson real estate", "MLS listings Las Vegas", "Summerlin homes", "houses for sale Las Vegas", "Berkshire Hathaway listings"],

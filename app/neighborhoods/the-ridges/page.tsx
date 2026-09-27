@@ -7,10 +7,10 @@ import { Phone, Shield, Star, Mountain, Home as HomeIcon } from "lucide-react";
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Berkshire Hathaway HomeServices The Ridges | Las Vegas Luxury Real Estate",
-  description: "Find luxury homes in The Ridges with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Summerlin's most exclusive guard-gated community. Median price $2.5M. Call (702) 222-1964.",
+  title: "The Ridges Luxury Homes for Bay Area Buyers",
+  description: "Find luxury homes in The Ridges with Bay Area to Las Vegas relocation. Dr. Jan Duffy specializes in Summerlin's most exclusive guard-gated community. Median price $2.5M. Call (702) 222-1964.",
   path: "/neighborhoods/the-ridges",
-  keywords: ["Berkshire Hathaway HomeServices The Ridges", "The Ridges homes for sale", "The Ridges Summerlin", "luxury homes Las Vegas", "guard gated Summerlin"],
+  keywords: ["The Ridges Luxury Homes for Bay Area Buyers", "The Ridges homes for sale", "The Ridges Summerlin", "luxury homes Las Vegas", "guard gated Summerlin"],
 });
 
 const faqSchema = {
@@ -79,7 +79,7 @@ export default function TheRidgesPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices The Ridges
+              The Ridges Luxury Homes for Bay Area Buyers
             </h1>
             <p className="text-xl text-slate-600">
               Las Vegas's most prestigious address. Experience The Ridges luxury with{" "}

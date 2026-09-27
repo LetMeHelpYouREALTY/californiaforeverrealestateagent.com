@@ -7,10 +7,10 @@ import { Phone, Mountain, TreePine, DollarSign, Home as HomeIcon } from "lucide-
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Berkshire Hathaway HomeServices Mountains Edge | Southwest Las Vegas",
-  description: "Find Mountains Edge homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this southwest Las Vegas community. Median price $475K. Call (702) 222-1964.",
+  title: "Mountains Edge Homes for Bay Area Relocators",
+  description: "Find Mountains Edge homes with Bay Area to Las Vegas relocation. Dr. Jan Duffy specializes in this southwest Las Vegas community. Median price $475K. Call (702) 222-1964.",
   path: "/neighborhoods/mountains-edge",
-  keywords: ["Berkshire Hathaway HomeServices Mountains Edge", "Mountains Edge homes for sale", "Mountains Edge Las Vegas", "southwest Las Vegas homes", "affordable Las Vegas"],
+  keywords: ["Mountains Edge Homes for Bay Area Relocators", "Mountains Edge homes for sale", "Mountains Edge Las Vegas", "southwest Las Vegas homes", "affordable Las Vegas"],
 });
 
 const faqSchema = {
@@ -79,7 +79,7 @@ export default function MountainsEdgePage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Mountains Edge
+              Mountains Edge Homes for Bay Area Relocators
             </h1>
             <p className="text-xl text-slate-600">
               Affordable luxury in southwest Las Vegas. Find your Mountains Edge home with{" "}
@@ -366,7 +366,7 @@ export default function MountainsEdgePage() {
               Discover Mountains Edge Value
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Mountains Edge specialist,
+              Contact Dr. Jan Duffy, your Mountains Edge Homes for Bay Area Relocators specialist,
               for expert guidance in finding exceptional value in southwest Las Vegas.
             </p>
             <a

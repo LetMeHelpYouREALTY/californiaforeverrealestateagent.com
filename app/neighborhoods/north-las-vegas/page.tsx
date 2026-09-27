@@ -7,10 +7,10 @@ import { Phone, DollarSign, TrendingUp, Home as HomeIcon, Users } from "lucide-r
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Berkshire Hathaway HomeServices North Las Vegas | Affordable Homes",
-  description: "Find affordable North Las Vegas homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy helps first-time buyers and investors. Median price $385K. Call (702) 222-1964.",
+  title: "North Las Vegas Homes for Bay Area Relocators",
+  description: "Find affordable North Las Vegas homes with Bay Area to Las Vegas relocation. Dr. Jan Duffy helps first-time buyers and investors. Median price $385K. Call (702) 222-1964.",
   path: "/neighborhoods/north-las-vegas",
-  keywords: ["Berkshire Hathaway HomeServices North Las Vegas", "North Las Vegas homes for sale", "affordable homes Las Vegas", "first time home buyer Las Vegas", "new construction North Las Vegas"],
+  keywords: ["North Las Vegas Homes for Bay Area Relocators", "North Las Vegas homes for sale", "affordable homes Las Vegas", "first time home buyer Las Vegas", "new construction North Las Vegas"],
 });
 
 const faqSchema = {
@@ -79,7 +79,7 @@ export default function NorthLasVegasPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices North Las Vegas
+              North Las Vegas Homes for Bay Area Relocators
             </h1>
             <p className="text-xl text-slate-600">
               Affordable homeownership and investment opportunities. Find your North Las Vegas
@@ -369,7 +369,7 @@ export default function NorthLasVegasPage() {
               Start Your Homeownership Journey
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices North Las Vegas expert,
+              Contact Dr. Jan Duffy, your North Las Vegas Homes for Bay Area Relocators expert,
               for guidance on finding affordable homes that fit your budget.
             </p>
             <a

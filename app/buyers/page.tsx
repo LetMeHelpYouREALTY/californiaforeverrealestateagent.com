@@ -22,7 +22,7 @@ import {
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Home Buying Guide Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Home Buying Guide Las Vegas for Bay Area Buyers",
   description: "Looking to buy a home in Las Vegas? Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties guides you through every step. Free buyer consultation. Call (702) 222-1964.",
   path: "/buyers",
   keywords: ["buy home Las Vegas", "Las Vegas home buyer", "Berkshire Hathaway buyer agent", "Henderson homes for sale", "first time home buyer Las Vegas", "California relocation Las Vegas", "55+ communities Las Vegas"],

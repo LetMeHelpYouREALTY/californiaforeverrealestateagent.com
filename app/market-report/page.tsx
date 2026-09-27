@@ -7,7 +7,7 @@ import { TrendingUp, TrendingDown, Home, Calendar, DollarSign, BarChart, Phone }
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Las Vegas Real Estate Market Report January 2026 | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Market Report January 2026 for Bay Area Buyers",
   description: "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Berkshire Hathaway HomeServices Nevada Properties.",
   path: "/market-report",
   keywords: ["Las Vegas real estate market", "Las Vegas home prices 2026", "Henderson real estate market", "Nevada housing market", "Berkshire Hathaway market report"],

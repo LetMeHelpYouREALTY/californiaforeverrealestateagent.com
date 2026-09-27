@@ -7,10 +7,10 @@ import { Phone, TreePine, ShoppingBag, GraduationCap, MapPin } from "lucide-reac
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Berkshire Hathaway HomeServices Green Valley | Henderson Real Estate",
-  description: "Find Green Valley homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's most established community. Median price $520K. Call (702) 222-1964.",
+  title: "Green Valley Homes for Bay Area Relocators",
+  description: "Find Green Valley homes with Bay Area to Las Vegas relocation. Dr. Jan Duffy specializes in Henderson's most established community. Median price $520K. Call (702) 222-1964.",
   path: "/neighborhoods/green-valley",
-  keywords: ["Berkshire Hathaway HomeServices Green Valley", "Green Valley homes for sale", "Green Valley Henderson", "Green Valley real estate", "Green Valley Ranch"],
+  keywords: ["Green Valley Homes for Bay Area Relocators", "Green Valley homes for sale", "Green Valley Henderson", "Green Valley real estate", "Green Valley Ranch"],
 });
 
 const faqSchema = {
@@ -79,7 +79,7 @@ export default function GreenValleyPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Green Valley
+              Green Valley Homes for Bay Area Relocators
             </h1>
             <p className="text-xl text-slate-600">
               Henderson's original master-planned community. Find your Green Valley home with{" "}
@@ -343,7 +343,7 @@ export default function GreenValleyPage() {
               Discover Green Valley Living
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Green Valley specialist,
+              Contact Dr. Jan Duffy, your Green Valley Homes for Bay Area Relocators specialist,
               for expert guidance in Henderson's most established community.
             </p>
             <a

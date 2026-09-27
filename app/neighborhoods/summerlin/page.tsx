@@ -14,10 +14,10 @@ import {
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Berkshire Hathaway HomeServices Summerlin | Las Vegas Luxury Real Estate",
-  description: "Find Summerlin homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy offers expert guidance in Las Vegas's premier master-planned community. Median price $625K. Call (702) 222-1964.",
+  title: "Summerlin Homes for Bay Area Relocators",
+  description: "Find Summerlin homes with Bay Area to Las Vegas relocation. Dr. Jan Duffy offers expert guidance in Las Vegas's premier master-planned community. Median price $625K. Call (702) 222-1964.",
   path: "/neighborhoods/summerlin",
-  keywords: ["Berkshire Hathaway HomeServices Summerlin", "Summerlin homes for sale", "Summerlin real estate agent", "Summerlin Las Vegas", "luxury homes Summerlin"],
+  keywords: ["Summerlin Homes for Bay Area Relocators", "Summerlin homes for sale", "Summerlin real estate agent", "Summerlin Las Vegas", "luxury homes Summerlin"],
 });
 
 // Breadcrumb items for this page
@@ -91,7 +91,7 @@ export default function SummerlinPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Summerlin
+              Summerlin Homes for Bay Area Relocators
             </h1>
             <p className="text-xl text-slate-600">
               Discover Las Vegas's premier master-planned community with Dr. Jan Duffy, your trusted{" "}
@@ -360,7 +360,7 @@ export default function SummerlinPage() {
               Ready to Find Your Summerlin Home?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Summerlin specialist,
+              Contact Dr. Jan Duffy, your Summerlin Homes for Bay Area Relocators specialist,
               for a personalized home search or free market analysis.
             </p>
             <a

@@ -7,10 +7,10 @@ import { Phone, Waves, TreePine, GraduationCap, Home as HomeIcon } from "lucide-
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Berkshire Hathaway HomeServices Inspirada | Henderson Resort Living",
-  description: "Find Inspirada homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's resort-style community. Median price $525K. Call (702) 222-1964.",
+  title: "Inspirada Homes for Bay Area Relocators",
+  description: "Find Inspirada homes with Bay Area to Las Vegas relocation. Dr. Jan Duffy specializes in Henderson's resort-style community. Median price $525K. Call (702) 222-1964.",
   path: "/neighborhoods/inspirada",
-  keywords: ["Berkshire Hathaway HomeServices Inspirada", "Inspirada homes for sale", "Inspirada Henderson", "Henderson master planned", "resort style community"],
+  keywords: ["Inspirada Homes for Bay Area Relocators", "Inspirada homes for sale", "Inspirada Henderson", "Henderson master planned", "resort style community"],
 });
 
 const faqSchema = {
@@ -79,7 +79,7 @@ export default function InspiradaPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Inspirada
+              Inspirada Homes for Bay Area Relocators
             </h1>
             <p className="text-xl text-slate-600">
               Resort-style living in Henderson. Discover Inspirada with{" "}
@@ -364,7 +364,7 @@ export default function InspiradaPage() {
               Experience Inspirada Living
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Inspirada specialist,
+              Contact Dr. Jan Duffy, your Inspirada Homes for Bay Area Relocators specialist,
               for expert guidance in Henderson's premier resort-style community.
             </p>
             <a

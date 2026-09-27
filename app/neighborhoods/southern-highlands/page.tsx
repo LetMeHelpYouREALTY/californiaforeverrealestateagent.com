@@ -7,10 +7,10 @@ import { Phone, Shield, Mountain, Star, MapPin } from "lucide-react";
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Berkshire Hathaway HomeServices Southern Highlands | Las Vegas Golf Community",
-  description: "Find Southern Highlands homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier golf community. Median price $750K. Call (702) 222-1964.",
+  title: "Southern Highlands Homes for Bay Area Relocators",
+  description: "Find Southern Highlands homes with Bay Area to Las Vegas relocation. Dr. Jan Duffy specializes in this premier golf community. Median price $750K. Call (702) 222-1964.",
   path: "/neighborhoods/southern-highlands",
-  keywords: ["Berkshire Hathaway HomeServices Southern Highlands", "Southern Highlands homes for sale", "Southern Highlands golf", "Las Vegas golf community", "guard gated Las Vegas"],
+  keywords: ["Southern Highlands Homes for Bay Area Relocators", "Southern Highlands homes for sale", "Southern Highlands golf", "Las Vegas golf community", "guard gated Las Vegas"],
 });
 
 const faqSchema = {
@@ -79,7 +79,7 @@ export default function SouthernHighlandsPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Southern Highlands
+              Southern Highlands Homes for Bay Area Relocators
             </h1>
             <p className="text-xl text-slate-600">
               Premier golf course living in southwest Las Vegas. Discover Southern Highlands with{" "}
@@ -367,7 +367,7 @@ export default function SouthernHighlandsPage() {
               Explore Southern Highlands Living
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Southern Highlands specialist,
+              Contact Dr. Jan Duffy, your Southern Highlands Homes for Bay Area Relocators specialist,
               for expert guidance in this premier golf community.
             </p>
             <a

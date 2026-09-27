@@ -21,7 +21,7 @@ import {
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
+  title: "New Construction Las Vegas for Bay Area Relocators | Buyer's Guide",
   description: "Free buyer representation on new construction homes in Las Vegas. Dr. Jan Duffy helps you navigate builder contracts, negotiate upgrades, and secure incentives. Call (702) 222-1964.",
   path: "/new-construction",
   keywords: ["Berkshire Hathaway HomeServices new construction Las Vegas", "new homes Las Vegas", "new construction Henderson", "Las Vegas builders", "Toll Brothers Las Vegas", "Lennar Las Vegas", "KB Home Las Vegas"],
@@ -248,7 +248,7 @@ export default function NewConstructionPage() {
               Free Buyer Representation
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices New Construction Las Vegas
+              New Construction Las Vegas for Bay Area Relocators
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Your complete buyer's guide to new homes in Las Vegas. Free representation,

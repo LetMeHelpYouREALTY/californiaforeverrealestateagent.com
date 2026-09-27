@@ -7,10 +7,10 @@ import { Phone, Shield, Users, GraduationCap, TreePine } from "lucide-react";
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Berkshire Hathaway HomeServices Henderson | Nevada Real Estate",
-  description: "Find Henderson homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's family-friendly communities. Median price $485K. Call (702) 222-1964.",
+  title: "Henderson Homes for Bay Area Relocators",
+  description: "Find Henderson homes with Bay Area to Las Vegas relocation. Dr. Jan Duffy specializes in Henderson's family-friendly communities. Median price $485K. Call (702) 222-1964.",
   path: "/neighborhoods/henderson",
-  keywords: ["Berkshire Hathaway HomeServices Henderson", "Henderson homes for sale", "Henderson real estate agent", "Henderson Nevada", "Green Valley Henderson"],
+  keywords: ["Henderson Homes for Bay Area Relocators", "Henderson homes for sale", "Henderson real estate agent", "Henderson Nevada", "Green Valley Henderson"],
 });
 
 const neighborhoodSchema = {
@@ -95,7 +95,7 @@ export default function HendersonPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Henderson
+              Henderson Homes for Bay Area Relocators
             </h1>
             <p className="text-xl text-slate-600">
               Nevada's safest city. Find your Henderson home with Dr. Jan Duffy, your trusted{" "}
@@ -381,7 +381,7 @@ export default function HendersonPage() {
               Find Your Henderson Home Today
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Henderson expert,
+              Contact Dr. Jan Duffy, your Henderson Homes for Bay Area Relocators expert,
               for personalized guidance and local market insights.
             </p>
             <a

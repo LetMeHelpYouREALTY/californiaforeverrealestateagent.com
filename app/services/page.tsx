@@ -23,7 +23,7 @@ import {
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Real Estate Services Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Real Estate Services for Bay Area Relocators",
   description: "Comprehensive real estate services from Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Buying, selling, luxury, investment, relocation, 55+ communities, and new construction. Call (702) 222-1964.",
   path: "/services",
   keywords: ["Las Vegas real estate services", "Berkshire Hathaway services", "home buying Las Vegas", "home selling Henderson", "luxury real estate services", "55+ community specialist", "California relocation Las Vegas"],

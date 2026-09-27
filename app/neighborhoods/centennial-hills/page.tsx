@@ -7,10 +7,10 @@ import { Phone, Mountain, Users, ShoppingBag, Home as HomeIcon } from "lucide-re
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Berkshire Hathaway HomeServices Centennial Hills | Las Vegas Homes",
-  description: "Find Centennial Hills homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this established northwest community. Median price $495K. Call (702) 222-1964.",
+  title: "Centennial Hills Homes for Bay Area Relocators",
+  description: "Find Centennial Hills homes with Bay Area to Las Vegas relocation. Dr. Jan Duffy specializes in this established northwest community. Median price $495K. Call (702) 222-1964.",
   path: "/neighborhoods/centennial-hills",
-  keywords: ["Berkshire Hathaway HomeServices Centennial Hills", "Centennial Hills homes for sale", "Centennial Hills Las Vegas", "northwest Las Vegas real estate", "family homes Las Vegas"],
+  keywords: ["Centennial Hills Homes for Bay Area Relocators", "Centennial Hills homes for sale", "Centennial Hills Las Vegas", "northwest Las Vegas real estate", "family homes Las Vegas"],
 });
 
 const faqSchema = {
@@ -79,7 +79,7 @@ export default function CentennialHillsPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Centennial Hills
+              Centennial Hills Homes for Bay Area Relocators
             </h1>
             <p className="text-xl text-slate-600">
               Family-friendly northwest Las Vegas living. Find your Centennial Hills home with{" "}
@@ -368,7 +368,7 @@ export default function CentennialHillsPage() {
               Find Your Centennial Hills Home
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Centennial Hills expert,
+              Contact Dr. Jan Duffy, your Centennial Hills Homes for Bay Area Relocators expert,
               for guidance in this established family community.
             </p>
             <a

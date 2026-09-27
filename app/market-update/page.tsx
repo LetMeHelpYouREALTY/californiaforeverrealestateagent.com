@@ -17,7 +17,7 @@ import {
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Berkshire Hathaway HomeServices Las Vegas Market Update | January 2026",
+  title: "Las Vegas Market Update for Bay Area Buyers | January 2026",
   description: "Weekly Las Vegas real estate market update from Berkshire Hathaway HomeServices Nevada Properties. Get the latest stats, notable sales, and expert analysis from Dr. Jan Duffy. Call (702) 222-1964.",
   path: "/market-update",
   keywords: ["Berkshire Hathaway HomeServices Las Vegas market update", "Las Vegas real estate market", "Las Vegas housing market 2026", "Henderson real estate market", "Las Vegas home prices"],
@@ -75,7 +75,7 @@ export default function MarketUpdatePage() {
               Week of January 20, 2026
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Berkshire Hathaway HomeServices Las Vegas Market Update
+              Las Vegas Market Update for Bay Area Buyers
             </h1>
             <p className="text-xl text-slate-600">
               Your weekly insider report on Las Vegas Valley real estate from{" "}

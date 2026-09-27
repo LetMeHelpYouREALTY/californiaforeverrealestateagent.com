@@ -7,7 +7,7 @@ import { Phone, TrendingUp, DollarSign, Building, BarChart, CheckCircle, Calcula
 import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "Las Vegas Investment Properties | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Investment Properties for Bay Area Buyers",
   description: "Invest in Las Vegas real estate with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Rental properties, ROI analysis, 1031 exchanges. No state income tax. Call (702) 222-1964.",
   path: "/investment-properties",
   keywords: ["Las Vegas investment property", "Las Vegas rental property", "Henderson real estate investing", "Nevada investment homes", "1031 exchange Las Vegas", "cash flow properties Las Vegas"],
