@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={GeistSans.className}>
       <head>
@@ -28,6 +32,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <GlobalHeroBanner />
         {children}
+        {/* Defines the <realscout-*> custom elements used across the site.
+            This used to come from the realscout-global-injector Cloudflare
+            Worker, which never runs because the domain is DNS-only to Vercel. */}
+        <Script
+          id="realscout-web-components"
+          type="module"
+          src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
+          strategy="afterInteractive"
+        />
         <Analytics />
       </body>
     </html>
