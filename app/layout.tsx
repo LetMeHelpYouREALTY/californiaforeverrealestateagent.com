@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={GeistSans.className}>
       <head>
