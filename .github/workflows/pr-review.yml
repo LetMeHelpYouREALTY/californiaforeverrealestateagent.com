@@ -324,9 +324,9 @@ jobs:
                   issues.push(`❌ **${file.filename}**: Missing metadata export (SEO)`);
                 }
                 
-                // Site phone: (702) 222-1964 (californiaforeverrealestateagent.com)
+                // Site phone is (702) 500-1955. 702-222-1964 is client email and text only (flag it); 500-1942 is not this site's number.
                 if (content.includes('702-500-1942') || content.includes('17025001942') ||
-                    content.includes('702-222-1964') || content.includes('17025001955')) {
+                    content.includes('702-222-1964') || content.includes('7022221964')) {
                   issues.push(`❌ **${file.filename}**: Wrong phone number (should be (702) 500-1955)`);
                 }
                 
@@ -485,7 +485,7 @@ jobs:
             - [ ] Code follows project conventions
             - [ ] Tests pass with adequate coverage (80%+)
             - [ ] SEO metadata is present and optimized
-            - [ ] Phone numbers are correct: (702) 222-1964
+            - [ ] Phone numbers are correct: (702) 500-1955 (702-222-1964 is client email and text only)
             - [ ] Berkshire Hathaway branding is consistent
             - [ ] Mobile responsive design verified
             - [ ] No console errors
