@@ -8,7 +8,7 @@ import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
   title: "North Las Vegas Homes for Bay Area Relocators",
-  description: "Find affordable North Las Vegas homes with Bay Area to Las Vegas relocation. Dr. Jan Duffy helps first-time buyers and investors. Median price $385K. Call (702) 222-1964.",
+  description: "Find affordable North Las Vegas homes with Bay Area to Las Vegas relocation. Dr. Jan Duffy helps first-time buyers and investors. Median price $385K. Call (702) 500-1955.",
   path: "/neighborhoods/north-las-vegas",
   keywords: ["North Las Vegas Homes for Bay Area Relocators", "North Las Vegas homes for sale", "affordable homes Las Vegas", "first time home buyer Las Vegas", "new construction North Las Vegas"],
 });
@@ -373,11 +373,11 @@ export default function NorthLasVegasPage() {
               for guidance on finding affordable homes that fit your budget.
             </p>
             <a
-              href="tel:+17022221964"
+              href="tel:+17025001955"
               className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
             >
               <Phone className="h-5 w-5 mr-2" />
-              Call (702) 222-1964
+              Call (702) 500-1955
             </a>
             <p className="mt-4 text-blue-200 text-sm">
               Berkshire Hathaway HomeServices Nevada Properties

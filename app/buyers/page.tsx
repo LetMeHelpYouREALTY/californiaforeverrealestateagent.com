@@ -23,7 +23,7 @@ import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
   title: "Home Buying Guide Las Vegas for Bay Area Buyers",
-  description: "Looking to buy a home in Las Vegas? Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties guides you through every step. Free buyer consultation. Call (702) 222-1964.",
+  description: "Looking to buy a home in Las Vegas? Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties guides you through every step. Free buyer consultation. Call (702) 500-1955.",
   path: "/buyers",
   keywords: ["buy home Las Vegas", "Las Vegas home buyer", "Berkshire Hathaway buyer agent", "Henderson homes for sale", "first time home buyer Las Vegas", "California relocation Las Vegas", "55+ communities Las Vegas"],
 });
@@ -35,7 +35,7 @@ const buyerSchema = {
   provider: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-    telephone: "+17022221964",
+    telephone: "+17025001955",
   },
   areaServed: "Las Vegas, Henderson, Summerlin, Clark County NV",
   serviceType: "Buyer Representation",
@@ -389,7 +389,7 @@ export default function BuyersPage() {
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Get answers to the most common questions from Las Vegas home buyers. If you don't 
-              see your question here, call Dr. Jan Duffy at (702) 222-1964 for a free consultation.
+              see your question here, call Dr. Jan Duffy at (702) 500-1955 for a free consultation.
             </p>
             <div className="space-y-4">
               {[
@@ -436,11 +436,11 @@ export default function BuyersPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17022221964"
+                href="tel:+17025001955"
                 className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 222-1964
+                Call (702) 500-1955
               </a>
               <Link
                 href="/contact"

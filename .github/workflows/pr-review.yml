@@ -326,8 +326,8 @@ jobs:
                 
                 // Site phone: (702) 222-1964 (californiaforeverrealestateagent.com)
                 if (content.includes('702-500-1942') || content.includes('17025001942') ||
-                    content.includes('702-500-1955') || content.includes('17025001955')) {
-                  issues.push(`❌ **${file.filename}**: Wrong phone number (should be (702) 222-1964)`);
+                    content.includes('702-222-1964') || content.includes('17025001955')) {
+                  issues.push(`❌ **${file.filename}**: Wrong phone number (should be (702) 500-1955)`);
                 }
                 
                 // Check for JSON-LD schema

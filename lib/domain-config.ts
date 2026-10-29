@@ -29,7 +29,7 @@ export const DOMAIN_CONFIG: DomainConfig = {
   neighborhood: "Bay Area to Las Vegas",
   tagline: "Bay Area to Las Vegas relocation",
   description:
-    "Households moving from the San Francisco Bay Area to Las Vegas or Henderson get relocation planning, Nevada home search, and coordinated Bay Area listing support from Dr. Jan Duffy, REALTOR®. Call (702) 222-1964.",
+    "Households moving from the San Francisco Bay Area to Las Vegas or Henderson get relocation planning, Nevada home search, and coordinated Bay Area listing support from Dr. Jan Duffy, REALTOR®. Call (702) 500-1955.",
   heroHeadline: "Moving from the Bay Area to Las Vegas",
   heroSubheadline:
     "Compare Bay Area and Las Vegas housing costs, plan your move timeline, and search Henderson and Las Vegas homes with a Nevada REALTOR® who works with Bay Area sellers and buyers every week.",
@@ -45,7 +45,7 @@ export const DOMAIN_CONFIG: DomainConfig = {
   ctaBadge: "Bay Area relocation",
   ctaHeadline: "Plan your Bay Area to Las Vegas move",
   ctaSubheadline:
-    "Call or text (702) 222-1964 — sell in the Bay Area, buy in Las Vegas or Henderson, one coordinated plan.",
+    "Call or text (702) 500-1955 — sell in the Bay Area, buy in Las Vegas or Henderson, one coordinated plan.",
 };
 
 export const DEFAULT_CONFIG: DomainConfig = DOMAIN_CONFIG;

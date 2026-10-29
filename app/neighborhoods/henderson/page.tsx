@@ -8,7 +8,7 @@ import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
   title: "Henderson Homes for Bay Area Relocators",
-  description: "Find Henderson homes with Bay Area to Las Vegas relocation. Dr. Jan Duffy specializes in Henderson's master-planned communities. Median price $485K. Call (702) 222-1964.",
+  description: "Find Henderson homes with Bay Area to Las Vegas relocation. Dr. Jan Duffy specializes in Henderson's master-planned communities. Median price $485K. Call (702) 500-1955.",
   path: "/neighborhoods/henderson",
   keywords: ["Henderson Homes for Bay Area Relocators", "Henderson homes for sale", "Henderson real estate agent", "Henderson Nevada", "Green Valley Henderson"],
 });
@@ -385,11 +385,11 @@ export default function HendersonPage() {
               for personalized guidance and local market insights.
             </p>
             <a
-              href="tel:+17022221964"
+              href="tel:+17025001955"
               className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
             >
               <Phone className="h-5 w-5 mr-2" />
-              Call (702) 222-1964
+              Call (702) 500-1955
             </a>
             <p className="mt-4 text-blue-200 text-sm">
               Berkshire Hathaway HomeServices Nevada Properties
