@@ -21,7 +21,7 @@ import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
   title: "First-Time Home Buyers Las Vegas from the Bay Area",
-  description: "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy at Berkshire Hathaway HomeServices. Call (702) 500-1955.",
+  description: "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy. Call (702) 500-1955.",
   path: "/buyers/first-time-buyers",
   keywords: ["first time home buyer Las Vegas", "first time buyer Nevada", "down payment assistance Las Vegas", "FHA loans Las Vegas", "VA loans Las Vegas", "Berkshire Hathaway HomeServices first time buyer"],
 });
@@ -453,7 +453,7 @@ export default function FirstTimeBuyersPage() {
                 </h3>
                 <p className="text-slate-600">
                   No! Buyer's agent services are typically free to buyers—the seller pays the commission.
-                  You get full professional representation from Berkshire Hathaway HomeServices at no
+                  You get full professional representation from Dr. Jan Duffy at no
                   cost to you.
                 </p>
               </div>
@@ -477,12 +477,11 @@ export default function FirstTimeBuyersPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Buying your first home is exciting AND overwhelming. My job is to make it less
                 overwhelming. I walk first-time buyers through every step, explain everything in
-                plain English, and make sure you're confident in your decision. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I have resources and
+                plain English, and make sure you're confident in your decision. As a local REALTOR®, I have resources and
                 connections that independent agents simply don't have."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>
@@ -511,9 +510,6 @@ export default function FirstTimeBuyersPage() {
                 Schedule Free Consultation
               </Link>
             </div>
-            <p className="mt-6 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </p>
           </section>
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>

@@ -8,7 +8,7 @@ import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
   title: "Las Vegas Market Report January 2026 for Bay Area Buyers",
-  description: "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Berkshire Hathaway HomeServices Nevada Properties.",
+  description: "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Dr. Jan Duffy.",
   path: "/market-report",
   keywords: ["Las Vegas real estate market", "Las Vegas home prices 2026", "Henderson real estate market", "Nevada housing market", "Berkshire Hathaway market report"],
 });
@@ -43,14 +43,14 @@ export default function MarketReportPage() {
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Market Intelligence
+              Market Intelligence
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Las Vegas Real Estate Market Report
             </h1>
             <p className="text-xl text-slate-600">
               January 2026 | Expert analysis from{" "}
-              <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>
+              Dr. Jan Duffy
             </p>
           </div>
 
@@ -185,7 +185,7 @@ export default function MarketReportPage() {
                 proper pricing and preparation."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
 
@@ -304,9 +304,6 @@ export default function MarketReportPage() {
               <Phone className="h-5 w-5 mr-2" />
               Call (702) 500-1955
             </a>
-            <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </p>
           </section>
         </div>
 

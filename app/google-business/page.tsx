@@ -29,7 +29,7 @@ import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
   title: "Dr. Jan Duffy, REALTOR® | Bay Area to Las Vegas",
-  description: "Dr. Jan Duffy is a trusted Las Vegas REALTOR\u00ae with Berkshire Hathaway HomeServices Nevada Properties. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1955.",
+  description: "Dr. Jan Duffy is a trusted Las Vegas REALTOR\u00ae with Dr. Jan Duffy. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1955.",
   path: "/google-business",
   keywords: ["Dr. Jan Duffy realtor", "Las Vegas real estate agent", "Berkshire Hathaway HomeServices Las Vegas", "Summerlin realtor", "Henderson real estate agent", "55+ communities Las Vegas", "California relocation Las Vegas"],
 });
@@ -58,7 +58,6 @@ export default function GoogleBusinessPage() {
                 <div>
                   <div className="flex items-center gap-2 mb-4">
                     <Award className="h-6 w-6 text-yellow-400" />
-                    <span className="text-yellow-400 font-semibold">Berkshire Hathaway HomeServices</span>
                   </div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     Dr. Jan Duffy

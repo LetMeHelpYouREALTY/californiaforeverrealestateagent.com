@@ -156,9 +156,6 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
                   Contact Agent
                 </h3>
                 <p className="text-slate-600 mb-4">Dr. Jan Duffy</p>
-                <p className="text-sm text-slate-600 mb-6">
-                  Berkshire Hathaway HomeServices Nevada Properties
-                </p>
                 <div className="space-y-3">
                   <Button
                     asChild

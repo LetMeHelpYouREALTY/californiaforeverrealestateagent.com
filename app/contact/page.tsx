@@ -10,7 +10,7 @@ import { buildPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildPageMetadata({
   title: "Contact Dr. Jan Duffy | Bay Area to Las Vegas",
-  description: "Contact Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment, get directions, or call (702) 500-1955. Las Vegas, Henderson, Summerlin real estate expert.",
+  description: "Contact Dr. Jan Duffy. Schedule an appointment, get directions, or call (702) 500-1955. Las Vegas, Henderson, Summerlin real estate expert.",
   path: "/contact",
   keywords: ["contact real estate agent Las Vegas", "Berkshire Hathaway contact", "Dr. Jan Duffy phone", "Las Vegas realtor contact", "schedule real estate appointment"],
 });
@@ -46,15 +46,12 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           {/* Hero */}
           <div className="text-center mb-12">
-            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Contact Dr. Jan Duffy
             </h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Questions about Las Vegas real estate? Your{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> expert is here to help. 
+              Dr. Jan Duffy expert is here to help. 
               Schedule an appointment or reach out directly.
             </p>
           </div>
@@ -65,8 +62,7 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold text-slate-900 mb-6">Get In Touch</h2>
               <p className="text-slate-700 mb-8">
                 Whether you're buying your first home, selling a luxury property, or exploring
-                investment opportunities, I'm here to provide expert guidance backed by the trusted{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> brand. Serving Las Vegas since 2008 
+                investment opportunities, I'm here to provide expert guidance backed by a career in real estate since 1983 
                 with $127M+ in closed transactions.
               </p>
 
@@ -109,7 +105,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Office Address</h3>
                     <address className="not-italic text-slate-700">
-                      Berkshire Hathaway HomeServices<br />
+                      Dr. Jan Duffy<br />
                       Nevada Properties<br />
                       9406 W Lake Mead Blvd, Suite 100<br />
                       Las Vegas, NV 89134
@@ -142,7 +138,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Berkshire Hathaway HomeServices Nevada Properties - Office Location"
+                  title="Map to Dr. Jan Duffy's office"
                   className="w-full"
                 />
               </div>
@@ -171,9 +167,8 @@ export default function ContactPage() {
               {/* Credentials */}
               <div className="p-4 bg-blue-50 rounded-lg">
                 <p className="text-sm text-slate-700">
-                  <strong>Dr. Jan Duffy, REALTOR®</strong><br />
-                  License S.0197614.LLC<br />
-                  Berkshire Hathaway HomeServices Nevada Properties
+                  <strong>Dr. Jan Duffy, REALTOR®</strong><br /><br />
+                  Dr. Jan Duffy
                 </p>
               </div>
             </div>
@@ -192,26 +187,25 @@ export default function ContactPage() {
                 <CalendlyWidget height="600px" />
               </div>
 
-              {/* Why Contact BHHS */}
+              {/* Why Contact Dr. Jan Duffy */}
               <div className="mt-6 bg-slate-900 text-white rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-4">Why Contact Berkshire Hathaway HomeServices?</h3>
+                <h3 className="font-bold text-lg mb-4">Why Contact Dr. Jan Duffy?</h3>
                 <div className="space-y-3">
                   <div className="flex items-start">
                     <Shield className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
-                      <strong className="text-white">Trusted Brand:</strong> The only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc.
-                    </p>
+                      <strong className="text-white">Trusted Brand:</strong>                    </p>
                   </div>
                   <div className="flex items-start">
                     <Star className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
-                      <strong className="text-white">Proven Results:</strong> $127M+ in closed transactions serving Las Vegas since 2008.
+                      <strong className="text-white">Proven Results:</strong> $127M+ in closed transactions in real estate since 1983.
                     </p>
                   </div>
                   <div className="flex items-start">
                     <Users className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
-                      <strong className="text-white">Global Network:</strong> 50,000+ agents worldwide for seamless relocations and referrals.
+                      <strong className="text-white">Global Network:</strong> A nationwide referral network for seamless relocations.
                     </p>
                   </div>
                 </div>
@@ -227,7 +221,7 @@ export default function ContactPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Dr. Jan Duffy provides expert real estate services throughout the Las Vegas Valley. 
               Whether you're buying, selling, or investing in any of these communities, contact us 
-              for personalized guidance backed by Berkshire Hathaway HomeServices.
+              for personalized guidance backed by local expertise.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[

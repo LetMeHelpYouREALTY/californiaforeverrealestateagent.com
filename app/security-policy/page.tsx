@@ -23,7 +23,7 @@ export default function SecurityPolicyPage() {
               Our Commitment to Security
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              At Berkshire Hathaway HomeServices Nevada Properties, we take the security
+              At Dr. Jan Duffy, we take the security
               of our systems and the privacy of our clients seriously. This page outlines
               our security practices and provides information for security researchers.
             </p>
@@ -239,9 +239,6 @@ export default function SecurityPolicyPage() {
             <div className="bg-gray-100 p-6 rounded-lg">
               <p className="mb-2">
                 <strong>Dr. Jan Duffy</strong>
-              </p>
-              <p className="mb-2">
-                Berkshire Hathaway HomeServices Nevada Properties
               </p>
               <p className="mb-2">
                 Email:{' '}
