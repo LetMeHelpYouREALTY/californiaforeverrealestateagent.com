@@ -5,6 +5,7 @@ import { getSiteUrl } from "@/lib/site-url";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import GlobalHeroBanner from "@/components/layout/GlobalHeroBanner";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <GlobalHeroBanner />
         {children}
         <Analytics />
+        <VercelSpeedInsights />
       </body>
     </html>
   );
